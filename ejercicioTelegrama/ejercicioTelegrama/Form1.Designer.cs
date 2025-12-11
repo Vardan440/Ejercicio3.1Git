@@ -28,33 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCalcularPrecio = new System.Windows.Forms.Button();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.lblCoste = new System.Windows.Forms.Label();
+            this.chkUrgente = new System.Windows.Forms.CheckBox();
+            this.txtTelegrama = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnCalcularPrecio
             // 
-            this.button1.Location = new System.Drawing.Point(191, 132);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(441, 191);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCalcularPrecio.Location = new System.Drawing.Point(469, 301);
+            this.btnCalcularPrecio.Name = "btnCalcularPrecio";
+            this.btnCalcularPrecio.Size = new System.Drawing.Size(92, 34);
+            this.btnCalcularPrecio.TabIndex = 11;
+            this.btnCalcularPrecio.Text = "Calcular";
+            this.btnCalcularPrecio.UseVisualStyleBackColor = true;
+            this.btnCalcularPrecio.Click += new System.EventHandler(this.btnCalcularPrecio_Click);
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(283, 322);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecio.TabIndex = 10;
+            // 
+            // lblCoste
+            // 
+            this.lblCoste.AutoSize = true;
+            this.lblCoste.Location = new System.Drawing.Point(240, 322);
+            this.lblCoste.Name = "lblCoste";
+            this.lblCoste.Size = new System.Drawing.Size(37, 13);
+            this.lblCoste.TabIndex = 9;
+            this.lblCoste.Text = "Coste:";
+            // 
+            // chkUrgente
+            // 
+            this.chkUrgente.AutoSize = true;
+            this.chkUrgente.Location = new System.Drawing.Point(242, 286);
+            this.chkUrgente.Name = "chkUrgente";
+            this.chkUrgente.Size = new System.Drawing.Size(70, 17);
+            this.chkUrgente.TabIndex = 8;
+            this.chkUrgente.Text = "Urgente?";
+            this.chkUrgente.UseVisualStyleBackColor = true;
+            // 
+            // txtTelegrama
+            // 
+            this.txtTelegrama.Location = new System.Drawing.Point(240, 133);
+            this.txtTelegrama.Multiline = true;
+            this.txtTelegrama.Name = "txtTelegrama";
+            this.txtTelegrama.Size = new System.Drawing.Size(321, 138);
+            this.txtTelegrama.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(240, 108);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Texto";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCalcularPrecio);
+            this.Controls.Add(this.txtPrecio);
+            this.Controls.Add(this.lblCoste);
+            this.Controls.Add(this.chkUrgente);
+            this.Controls.Add(this.txtTelegrama);
+            this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCalcularPrecio;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.Label lblCoste;
+        private System.Windows.Forms.CheckBox chkUrgente;
+        private System.Windows.Forms.TextBox txtTelegrama;
+        private System.Windows.Forms.Label label1;
     }
 }
 
